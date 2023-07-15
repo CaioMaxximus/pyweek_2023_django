@@ -7,8 +7,6 @@ O Sistema de Gerenciamento Financeiro é uma aplicação que permite o gerenciam
 - Registro de despesas e receitas como data, descrição e valor.
 - Categorização das despesas e receitas para uma melhor organização.
 - Visualização de um gráficos para análise financeira.
-- Definição de metas e orçamentos para um planejamento financeiro mais efetivo.
-- Notificações e lembretes para acompanhar o cumprimento das metas e orçamentos.
 
 ## Requisitos do Sistema
 
@@ -26,18 +24,27 @@ git clone git@github.com:CaioMaxximus/pyweek_2023_django.git
 2. Acesse o diretório do projeto:
 
 ```shell
-cd sistema-gerenciamento-financeiro
+cd PythonWeek2023
 ```
 
-3. Ative o ambiente virtual:
+3. Crie e Ative o ambiente virtual:
 
 ```shell
+
+python -m venv venv # para sistemas Windows
+python -m venv venv # para sistemas Unix-like
 
 source venv/bin/activate  # para sistemas Unix-like (Linux, macOS)
 venv/Scripts/Activate  # para sistemas Windows
 ```
 
-4. Configure as variáveis de ambiente necessárias no arquivo `.env`. Verifique o arquivo `.env.example` para saber quais variáveis são necessárias e defina os valores apropriados.
+4.Baixe as dependências necessárias atrés do arquivo requirements.txt
+
+```python
+
+pip install -r requirements.txt
+
+```
 
 5. Execute as migrações do banco de dados:
 
